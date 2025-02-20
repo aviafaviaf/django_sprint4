@@ -1,6 +1,7 @@
 from typing import Any
 from django.shortcuts import render, get_object_or_404, redirect
-from django.views.generic import TemplateView, CreateView, UpdateView, DeleteView
+from django.views.generic\
+    import TemplateView, CreateView, UpdateView, DeleteView
 from .models import Post, Category, Comment
 from django.db.models import Count
 from django.utils.timezone import localdate
@@ -12,6 +13,7 @@ from django.urls import reverse_lazy
 from .forms import CommentForm, UserEditForm
 
 User = get_user_model()
+
 
 class HomePage(TemplateView):
     template_name = 'blog/index.html'
